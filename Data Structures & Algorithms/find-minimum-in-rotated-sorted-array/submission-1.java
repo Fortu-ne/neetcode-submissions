@@ -1,0 +1,15 @@
+class Solution {
+    public int findMin(int[] nums) {
+
+        if(nums.length < 1) return 0;
+
+        int min = Integer.MAX_VALUE;
+        
+        for(int n : nums){
+            min = Math.min(min,n);
+        }
+
+
+        return min;
+    }
+}
